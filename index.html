@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>SrouTube Видео - видео с UPWAP.ORG</title>
+ <meta name="description" content="">
+ <link rel="stylesheet" href="style.css">
+<style>
+body,
+html {
+ margin: 0;
+ padding: 0;
+ height: 100%;
+ font-family: Verdana, Arial;
+ box-sizing: border-box;
+}
+h1 {
+font-family: Verdana;
+color: White;
+}
+p {
+font-family: Arial;
+color: Black;
+}
+#url-bar {
+ width: 80%;
+ padding: 10px;
+ border-radius: 64px;
+}
+
+#nav-bar {
+ display: flex;
+ align-items: center;
+ width: 100vw;
+ z-index: 1000;
+ height: 50px;
+ background: red;
+}
+
+#go-button {
+ padding: 10px;
+ background-color: Red;
+ border-radius: 64px;
+ color: #1b2b4c;
+ margin-left: auto;
+}
+
+#go-button:hover {
+ cursor: pointer;
+ background-color: #1b2b4c;
+ color: #f5f6f7;
+}
+
+#browser-content {
+ margin-top: 60px;
+ padding: 10px;
+}
+</style>
+ 
+</head>
+
+<body>
+ <div id="nav-bar">
+  <h1>SrouTube Видео</h1> 
+ </div>
+ <div id="browser-content">
+   
+<h3>Каталог видео с Upwap.org</h3>
+
+<iframe id="appFrame" referrerpolicy="unsafe-url" frameBorder="0" src="http://upwap.org/cat/index.php?ft=3" height="600" width="600"
+sandbox="allow-scripts allow-same-origin allow-pointer-lock allow-forms allow-downloads-without-user-activation"></iframe>
+
+</body>
+ </html>
